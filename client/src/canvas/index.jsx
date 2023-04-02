@@ -9,6 +9,7 @@ const CanvasModel = () => {
   return (
     <Canvas
       shadows
+      // plus fov est petit plus le tshirt se rapproche
       camera={{ position: [0, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
       className="w-full max-w-full h-full transition-all ease-in"
@@ -17,7 +18,7 @@ const CanvasModel = () => {
       <Environment preset="city" />
 
       <CameraRig>
-        {/* <Backdrop />  */}
+        <Backdrop />
         <Center>
           <Shirt />
         </Center>
