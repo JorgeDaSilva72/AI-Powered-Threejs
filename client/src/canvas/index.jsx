@@ -1,15 +1,14 @@
-import { Canvas } from "@react-three/fiber";
-import { Environment, Center } from "@react-three/drei";
+import { Canvas } from '@react-three/fiber'
+import { Environment, Center } from '@react-three/drei';
 
-import Shirt from "./Shirt";
-import Backdrop from "./Backdrop";
-import CameraRig from "./CameraRig";
+import Shirt from './Shirt';
+import Backdrop from './Backdrop';
+import CameraRig from './CameraRig';
 
 const CanvasModel = () => {
   return (
     <Canvas
       shadows
-      // plus fov est petit plus le tshirt se rapproche
       camera={{ position: [0, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
       className="w-full max-w-full h-full transition-all ease-in"
@@ -24,7 +23,7 @@ const CanvasModel = () => {
         </Center>
       </CameraRig>
     </Canvas>
-  );
-};
+  )
+}
 
-export default CanvasModel;
+export default CanvasModel
